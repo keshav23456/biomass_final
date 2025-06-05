@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Hero from '../components/home/Hero';
+import ImageCarousel from '../components/home/ImageCarousel';
 import ProductsGrid from '../components/home/ProductsGrid';
 import StatsBanner from '../components/home/StatsBanner';
 import PartnersCarousel from '../components/home/PartnersCarousel';
@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
     {
       number: "$117B",
       label: "Market Value",
-      description: "Prjected biomass market value by 2030"
+      description: "Projected biomass market value by 2030"
     },
     {
       number: "3.5%",
@@ -53,13 +53,7 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <Hero
-        title="Sustainable Biomass Solutions for a Cleaner Future"
-        subtitle="Leading the way in renewable energy with innovative biomass technologies that reduce emissions and increase efficiency."
-        ctaText="About Us"
-        ctaLink="/about"
-        backgroundImage="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-      />
+      <ImageCarousel />
       
       <section className="section bg-primary-50">
         <div className="container-custom">
@@ -79,6 +73,8 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Keep the rest of your existing HomePage content */}
+      
       <section className="section">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
